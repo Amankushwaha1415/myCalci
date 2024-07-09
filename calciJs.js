@@ -20,6 +20,10 @@ btns.forEach((btn)=>{
                 console.log(output);
                 inputdata.value=output;
             }
+            else if(screenData.includes("/*")||screenData.includes("/+")||screenData.includes("/-")||screenData.includes("/%")||screenData.includes("*/")||screenData.includes("*+")||screenData.includes("*-")||screenData.includes("*%")||screenData.includes("+/")||screenData.includes("+-")||screenData.includes("+*")||screenData.includes("+%")||screenData.includes("-*")||screenData.includes("-/")||screenData.includes("-+")||screenData.includes("-%")||screenData.includes("%/")||screenData.includes("%+")||screenData.includes("%-")||screenData.includes("%%")||screenData.includes("//")||screenData.includes("**")||screenData.includes("++")||screenData.includes("--")){
+                screenData="";
+                inputdata.value="Error"
+            }
             else{
                 screenData=eval(screenData);
                 inputdata.value=screenData;
