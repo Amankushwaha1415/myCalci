@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-content{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(41, 41, 40);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start ;
+}
+.navbar{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    height: 7vh;
+}
+.logo{
+    margin-left: 20px;
+    font-family: cursive;
+    font-weight: 400;
+    color: rgb(255, 231, 12);
+    cursor: pointer;
+}
+.logo1{
+    font-size: 23px;
+}
+.logo2{
+    font-size: 28px;
+    color: rgb(255, 219, 17);
+}
+.logo3{
+    font-size: 20px;
+}
+
+
+.calculator{
+    width: 30vw;
+    height: 75vh;
+    border: 1px solid rgb(255, 219, 17);
+    margin: auto;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 25px;
+}
+input{
+    text-align: right;
+  width: 30vw;
+  border: none;
+  height: 17vh;
+  margin: -1px;
+  padding: 5px;
+  font-size: 30px;
+  background-color: grey;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom: 1px solid rgb(255, 219, 17);
+  border-left: 1px solid rgb(255, 219, 17);
+  border-right: 1px solid rgb(255, 219, 17);
+    color: white;
+
+}
+input-cursors{
+    visibility: visible;
+}
+input:focus{
+    outline: none;
+}
+.row{
+    width: 30vw;
+    height: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+button{
+    width: 7vw;
+    height: 9vh;
+    border: 1px solid rgb(255, 219, 17);
+    border-radius: 30px;
+    background-color: rgb(224, 224, 224);
+    font-size: 20px;
+    cursor: pointer;
+}
+.bigbtn{
+    width: 14vw;
+}
+
+
+/* adding media queries */
+@media(max-width:900px){
+    .calculator{
+        width: 35vw;
+    }
+    input{
+        width: 35vw;
+        font-size: 25px;
+    }
+    .row{
+        width: 35vw;
+    }
+    button{
+        width: 8vw;
+        font-size: 18px;
+    }
+}
+@media(max-width:730px){
+    .calculator{
+        width: 44vw;
+    }
+    input{
+        width: 44vw;
+        font-size: 25px;
+    }
+    .row{
+        width: 44vw;
+    }
+    button{
+        width: 10vw;
+        font-size: 18px;
+    }
+    .bigbtn{
+        width: 19vw;
+    }
+}
+.logo1{
+    font-size: 22px;
+}
+.logo2{
+    font-size: 26px;
+    color: rgb(255, 219, 17);
+}
+.logo3{
+    font-size: 18px;
+}
+@media(max-width:620px){
+    .calculator{
+        width: 50vw;
+    }
+    input{
+        width: 50vw;
+        font-size: 25px;
+    }
+    .row{
+        width: 50vw;
+    }
+    button{
+        width: 11vw;
+        font-size: 18px;
+    }
+    .bigbtn{
+        width: 21vw;
+    }
+    .logo1{
+    font-size: 20px;
+}
+.logo2{
+    font-size: 25px;
+    color: rgb(255, 219, 17);
+}
+.logo3{
+    font-size: 17px;
+}
+}
+@media(max-width:530px){
+    .calculator{
+        width: 65vw;
+    }
+    input{
+        width: 65vw;
+        font-size: 25px;
+    }
+    .row{
+        width: 65vw;
+    }
+    button{
+        width: 14vw;
+        font-size: 18px;
+    }
+    .bigbtn{
+        width: 26vw;
+    }
+    .logo1{
+    font-size: 20px;
+}
+.logo2{
+    font-size: 25px;
+    color: rgb(255, 219, 17);
+}
+.logo3{
+    font-size: 17px;
+}
+}
+@media(max-width:435px){
+    .calculator{
+        width: 75vw;
+    }
+    input{
+        width: 75vw;
+        font-size: 25px;
+    }
+    .row{
+        width: 75vw;
+    }
+    button{
+        width: 17vw;
+        font-size: 18px;
+    }
+    .bigbtn{
+        width: 32vw;
+    }
+    .logo1{
+    font-size: 18px;
+}
+.logo2{
+    font-size: 24px;
+    color: rgb(255, 219, 17);
+}
+.logo3{
+    font-size: 16px;
+}
+}
+
+@media(max-height:640px){
+    .calculator{
+        height:70vh ;
+    }
+    .row{
+        height:8vh;
+    }
+    button{
+        height: 8vh;
+    }
+}
+@media(min-height:700px){
+    .calculator{
+        height:60vh ;
+    }
+    .row{
+        height:8vh;
+    }
+    button{
+        height: 7vh;
+    }
+}
